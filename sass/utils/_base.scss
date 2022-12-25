@@ -1,0 +1,62 @@
+.body {
+    font-family: $text-roboto;
+    font-style: normal;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  ul {
+    margin: 0;
+  }
+  
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    // outline: 2px solid red;
+
+    // phone screen 0px & >
+@media screen and (min-width: 480px) {
+  width: 480px;
+}
+  // tablets screen 768px & >
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  // desktop screen 1200px & >
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+
+    // width: 1200px;
+    // padding-left: 15px;
+    // padding-right: 15px;
+    // margin-left: auto;
+    // margin-right: auto;
+  }
+
+  
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+// для респонсивных картинок (респонизация) базовых, но не фоновых
+img {
+  display: block
+  max-width 100%;
+  height: auto;
+}
+
+
