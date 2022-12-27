@@ -1,5 +1,5 @@
 /* --------------------modal-backdrop------------- */
-.modal-backdrop {
+.modal-read_more {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -9,7 +9,7 @@
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-backdrop.is-hidden .modal {
+.modal-read_more.is-hidden .modal {
     transform: scale(1);
 }
 .is-hidden {
@@ -67,11 +67,30 @@
 /* modal-form input */
 .modal-title {
   color: $button-filtr-font;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: calc(16 / 14);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: calc(28 / 20);
+  }
   text-align: center;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+  margin-bottom: 32px;
+  }
+}
+
+.modal-text {
+  color: $button-filtr-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(20 / 14);
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: calc(22 / 16);
+  }
+  text-align: left;
 }
   // .modal-form {
   // }
